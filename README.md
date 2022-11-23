@@ -60,7 +60,7 @@ Comprehensive – MEDIUM, some spreadsheets were missing data, but enough on the
 Current – HIGH, I chose the most recent 12 months so the data is current.
 Cited – HIGH, because the data originates from Cyclistic, it has a vetted source so is credible.
 
-Overall, the dataset is considered good quality data, giving an accuate look at past usage of the bike-share scheme in Chicago over the previous 12 months. It is worth noting that certain information has been removed to address privacy concerns by protecting user identity and from linking to credit card numbers.
+Overall, the dataset is considered good quality data, giving an accuate look at past usage of the bike-share scheme in Chicago over the previous 12 months. It is worth noting that certain information has been removed to address privacy concerns by protecting user identity and from linking to credit card numbers. This means that we won’t be able to connect pass purchases to credit card numbers to determine if casual riders live in the Cyclistic service area or if they have purchased multiple single passes.
 
 The data has a high degree of integrity as it has been collated by Cyclistic. Analysing this data will help to answer the question assigned to me by finding out whether there are any differences or not in how the two types of bike riders use the service.
 
