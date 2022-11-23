@@ -1,15 +1,14 @@
 # Google Capstone Project
 
-## Introduction
+### Introduction
 
-## Table of Contents
+#### Table of Contents
 - [Step 1: Ask](#step-1-ask)
-- [How to Customize Markdown files?](#how-to-customize-markdown-files)
-- [How to Create New Repository?](#how-to-create-new-repository)
-- [How to Create New Repository?](#how-to-create-new-repository)
-- [How to Create New Repository?](#how-to-create-new-repository)
-- [How to Create New Repository?](#how-to-create-new-repository)
-- 
+- [Step 2: Prepare](#step-2-prepare)
+- [Step 3: Process](step-3-process)
+- [Step 4: Analyse](#step-4-analyse)
+- [Step 5: Share](#step-5-share)
+- [Step 6: Act](#step-6-act)
 
 ### Step 1: Ask
 
