@@ -42,9 +42,15 @@ Moreno has identified three questions will guide the future marketing programme:
 
 And I have been assigned the first question: how do annual members and casual riders use Cyclistic bikes differently?
 
+Finding a data-driven answer to this question will help Moreno decide upon her marketing tactics. 
+
 ## Step 2: Prepare
 
-Prepare data by collecting and storing the information.
+The next stage is Prepare. This involves collecting and storing the information. The data for this project can be downloaded from [here](https://divvy-tripdata.s3.amazonaws.com/index.html).
+
+I am to use the company's historical trip data to analyse and identify trends. 
+
+The data is provided in monthly blocks and I have been assigned to look a
 
 ### Method
 
