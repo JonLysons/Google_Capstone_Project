@@ -15,21 +15,32 @@ Using the data analysis steps proscribed by the course, here is my solution and 
 
 ## Step 1: Ask
 
-The first step in the process is the Ask stage. The project starts off by asking questions. This is to help define the problem. In this case 
+The first step in the process is the Ask stage. The project starts off by asking questions. This is to help define the problem. 
 
 ### Background
 
-In 2016, Cyclistic launched a successful bike-share offering. Since then, the program has grown to a fleet of 5,824 bicycles that are geotracked and locked into a network of 692 stations across Chicago.
+In 2016, Cyclistic launched a successful bike-share offering. Since then, the programme has grown to a fleet of 5,824 bicycles that are geotracked and locked into a network of 692 stations across Chicago in the US.
 
-Cyclistic’s marketing strategy relied on building general awareness and appealing to broad consumer segments. To do this Cyclistic used flexible pricing plans: single-ride passes, full-day passes and annual memberships. Single-ride or full-day passes are referred to as casual riders, while annual memberships are called members.
+Cyclistic’s marketing strategy has used general awareness to appeal to broad consumer segments. To do this Cyclistic used flexible pricing plans: single-ride passes, full-day passes and annual memberships. Single-ride or full-day passes are referred to as casual riders, while annual memberships are called members.
 
 ### Business Task
 
+Cyclistic’s finance analysts have found that annual members are much more profitable than casual riders. Although the pricing flexibility helps the company to attract more customers, maximizing the number of annual members will be key to future growth. Rather than creating a marketing campaign that targets all-new customers, the company wants to convert casual riders into members.
+
 ### Key Stakeholder
+
+The key stakeholder in this project is Lily Moreno, director of marketing. Moreno is responsible for the development of campaigns and initiatives to promote the bike-share programme.
 
 ### Objective
 
+Moreno has set a clear goal: Design marketing strategies aimed at converting casual riders into annual members. In order to do that, however, the marketing analyst team needs to better understand how annual members and casual riders differ, why casual riders would buy a membership, and how digital media could affect their marketing tactics. Moreno and her team are interested in analyzing the Cyclistic historical bike trip data to identify trends.
+
 ### Method
+
+Three questions will guide the future marketing program:
+1. How do annual members and casual riders use Cyclistic bikes differently?
+2. Why would casual riders buy Cyclistic annual memberships?
+3. How can Cyclistic use digital media to influence casual riders to become members?
 
 ## Step 2: Prepare
 
