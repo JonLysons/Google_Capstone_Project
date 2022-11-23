@@ -66,7 +66,7 @@ The data has a high degree of integrity as it has been collated by Cyclistic. An
 
 Potential problems are the size of the files, which vary from 19MB to 153MB – larger files might become unweildly in Google Sheets. If this happens then I might switch to R Studio.   
 
-To make the data naming more user-friendly, I change the file names from `202207-divvy-tripdata.csv` to `2022_07_tripData.csv`.
+To make the data naming more user-friendly, I change the file names from `202207-divvy-tripdata.csv` to `2022_07_TripData.csv`.
 
 ## Step 3: Process
 
