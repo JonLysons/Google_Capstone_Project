@@ -48,9 +48,25 @@ Finding a data-driven answer to this question will help Moreno decide upon her m
 
 The next stage is Prepare. This involves collecting and storing the information. 
 
+### Method
+
 I am to use the company's historical trip data to analyse and identify trends over the preceding 12 months. The data for this project can be downloaded from [here](https://divvy-tripdata.s3.amazonaws.com/index.html) in a zip format, with each file containing the data for one calendar month. I selected and downloaded data from August 2021 to July 2022. Unzipping the files, the data was contained in .csv files.
 
-### Method
+A good data source is ROCCC which stands for Reliable, Original, Comprehensive, Current and Cited.
+
+Reliable – HIGH, this is first-party data that has been collected by Cyclistic. 
+Original – HIGH, the data is original.
+Comprehensive – HIGH, it contains usage by both casual and member riders in each month.
+Current – HIGH, I chose the most recent 12 months so the data is current.
+Cited – HIGH, because the data originates from Cyclistic, it has a vetted source so is credible.
+
+Overall, the dataset is considered good quality data, giving an accuate look at past usage of the bike-share scheme in Chicago over the previous 12 months. It is worth noting that certain information has been removed to address privacy concerns by protecting user identity and from linking to credit card numbers.
+
+The data has a high degree of integrity as it has been collated by Cyclistic. Analysing this data will help to answer the question assigned to me by finding out whether there are any differences or not in how the two types of bike riders use the service.
+
+Potential problems are the size of the files, which vary from 19MB to 153MB – larger files might become unweildly in Google Sheets. If this happens then I might switch to R Studio.   
+
+To make the data naming more user-friendly, I change the file names from `202207-divvy-tripdata.csv` to `2022_07_tripData.csv`.
 
 ## Step 3: Process
 
