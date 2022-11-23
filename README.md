@@ -1,8 +1,11 @@
 # Google Capstone Project
 
-### Introduction
+## Introduction
+The final step in the Google Data Analytics Course is the Capstone Project. Here, you have a choice of two assignments. I chose the bike-share case study.
 
-#### Table of Contents
+Using the data analysis steps proscribed by the course, here is my solution and methodology.
+
+### Table of Contents
 - [Step 1: Ask](#step-1-ask)
 - [Step 2: Prepare](#step-2-prepare)
 - [Step 3: Process](step-3-process)
@@ -10,32 +13,34 @@
 - [Step 5: Share](#step-5-share)
 - [Step 6: Act](#step-6-act)
 
-### Step 1: Ask
+## Step 1: Ask
 
-#### Background
+The first step in the process is the Ask stage. Here 
 
-#### Business Task
+### Background
 
-#### Objective
+### Business Task
 
-#### Method
+### Objective
 
-### Step 2: Prepare
+### Method
 
-#### Method
+## Step 2: Prepare
 
-### Step 3: Process
+### Method
 
-#### Method
+## Step 3: Process
 
-### Step 4: Analyse
+### Method
 
-#### Method
+## Step 4: Analyse
 
-### Step 5: Share
+### Method
 
-#### Method
+## Step 5: Share
 
-### Step 6: Act
+### Method
 
-#### Method
+## Step 6: Act
+
+### Method
