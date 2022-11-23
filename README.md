@@ -33,14 +33,14 @@ The key stakeholder in this project is Lily Moreno, director of marketing. Moren
 
 ### Objective
 
-Moreno has set a clear goal: Design marketing strategies aimed at converting casual riders into annual members. In order to do that, however, the marketing analyst team needs to better understand how annual members and casual riders differ, why casual riders would buy a membership, and how digital media could affect their marketing tactics. Moreno and her team are interested in analyzing the Cyclistic historical bike trip data to identify trends.
+Moreno has set a clear goal: design marketing strategies aimed at converting casual riders into annual members. To do that, the marketing analyst team needs to understand the differences between how annual members and casual riders use its service, why casual riders would buy a membership, and how digital media could affect their marketing tactics. Moreno and her team are interested in analyzing the Cyclistic historical bike trip data to identify trends.
 
-### Method
-
-Three questions will guide the future marketing program:
+Moreno has identified three questions will guide the future marketing programme:
 1. How do annual members and casual riders use Cyclistic bikes differently?
 2. Why would casual riders buy Cyclistic annual memberships?
 3. How can Cyclistic use digital media to influence casual riders to become members?
+
+And I have been assigned the first question: how do annual members and casual riders use Cyclistic bikes differently?
 
 ## Step 2: Prepare
 
