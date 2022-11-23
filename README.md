@@ -54,11 +54,15 @@ I am to use the company's historical trip data to analyse and identify trends ov
 
 A good data source is ROCCC which stands for Reliable, Original, Comprehensive, Current and Cited.
 
-Reliable – HIGH, this is first-party data that has been collected by Cyclistic. 
-Original – HIGH, the data is original.
-Comprehensive – MEDIUM, some spreadsheets were missing data, but enough on the usage of casual and member riders for the purposses of this query.
-Current – HIGH, I chose the most recent 12 months so the data is current.
-Cited – HIGH, because the data originates from Cyclistic, it has a vetted source so is credible.
+**Reliable** – HIGH, this is first-party data that has been collected by Cyclistic.
+
+**Original** – HIGH, the data is original.
+
+**Comprehensive** – MEDIUM, some spreadsheets were missing data, but enough on the usage of casual and member riders for the purposses of this query.
+
+**Current** – HIGH, I chose the most recent 12 months so the data is current.
+
+**Cited** – HIGH, because the data originates from Cyclistic, it has a vetted source so is credible.
 
 Overall, the dataset is considered good quality data, giving an accuate look at past usage of the bike-share scheme in Chicago over the previous 12 months. It is worth noting that certain information has been removed to address privacy concerns by protecting user identity and from linking to credit card numbers. This means that we won’t be able to connect pass purchases to credit card numbers to determine if casual riders live in the Cyclistic service area or if they have purchased multiple single passes.
 
