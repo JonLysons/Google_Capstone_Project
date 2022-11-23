@@ -1,33 +1,33 @@
-#Google Capstone Project
+# Google Capstone Project
 
-##Introduction
+## Introduction
 
 ###Step 1: Ask
 
-####Background
+#### Background
 
-####Business Task
+#### Business Task
 
-####Objective
+#### Objective
 
-####Method
+#### Method
 
-###Step 2: Prepare
+### Step 2: Prepare
 
-####Method
+#### Method
 
-###Step 3: Process
+### Step 3: Process
 
-####Method
+#### Method
 
-###Step 4: Analyse
+### Step 4: Analyse
 
-####Method
+#### Method
 
-###Step 5: Share
+### Step 5: Share
 
-####Method
+#### Method
 
-###Step 6: Act
+### Step 6: Act
 
-####Method
+#### Method
