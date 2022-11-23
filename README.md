@@ -2,7 +2,7 @@
 
 ## Introduction
 
-###Step 1: Ask
+### Step 1: Ask
 
 #### Background
 
