@@ -19,7 +19,13 @@ The first step in the process is the Ask stage. The project starts off by asking
 
 ### Background
 
+In 2016, Cyclistic launched a successful bike-share offering. Since then, the program has grown to a fleet of 5,824 bicycles that are geotracked and locked into a network of 692 stations across Chicago.
+
+Cyclistic’s marketing strategy relied on building general awareness and appealing to broad consumer segments. To do this Cyclistic used flexible pricing plans: single-ride passes, full-day passes and annual memberships. Single-ride or full-day passes are referred to as casual riders, while annual memberships are called members.
+
 ### Business Task
+
+### Key Stakeholder
 
 ### Objective
 
