@@ -46,11 +46,9 @@ Finding a data-driven answer to this question will help Moreno decide upon her m
 
 ## Step 2: Prepare
 
-The next stage is Prepare. This involves collecting and storing the information. The data for this project can be downloaded from [here](https://divvy-tripdata.s3.amazonaws.com/index.html).
+The next stage is Prepare. This involves collecting and storing the information. 
 
-I am to use the company's historical trip data to analyse and identify trends. 
-
-The data is provided in monthly blocks and I have been assigned to look a
+I am to use the company's historical trip data to analyse and identify trends over the preceding 12 months. The data for this project can be downloaded from [here](https://divvy-tripdata.s3.amazonaws.com/index.html) in a zip format, with each file containing the data for one calendar month. I selected and downloaded data from August 2021 to July 2022. Unzipping the files, the data was contained in .csv files.
 
 ### Method
 
