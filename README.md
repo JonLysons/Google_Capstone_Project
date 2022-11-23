@@ -56,7 +56,7 @@ A good data source is ROCCC which stands for Reliable, Original, Comprehensive, 
 
 Reliable – HIGH, this is first-party data that has been collected by Cyclistic. 
 Original – HIGH, the data is original.
-Comprehensive – HIGH, it contains usage by both casual and member riders in each month.
+Comprehensive – MEDIUM, some spreadsheets were missing data, but enough on the usage of casual and member riders for the purposses of this query.
 Current – HIGH, I chose the most recent 12 months so the data is current.
 Cited – HIGH, because the data originates from Cyclistic, it has a vetted source so is credible.
 
