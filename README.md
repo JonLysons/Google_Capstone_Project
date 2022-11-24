@@ -78,6 +78,8 @@ Process data by cleaning and checking the information.
 
 ### Method
 
+As expected, the spreadsheets proved to be too unwieldly for Google Sheets, but I had much better luck in Excel, which opened them easily. First glance at the data revealed that there are 13 columns with close to 100,000 rows. 
+
 ## Step 4: Analyse
 
 Analyse data to find patterns, relationships, and trends.
