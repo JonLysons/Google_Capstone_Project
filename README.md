@@ -68,7 +68,7 @@ Overall, the dataset is considered good quality data, giving an accuate look at 
 
 The data has a high degree of integrity as it has been collated by Cyclistic. Analysing this data will help to answer the question assigned to me by finding out whether there are any differences or not in how the two types of bike riders use the service.
 
-Potential problems are the size of the files, which vary from 19MB to 153MB – larger files might become unweildly in Google Sheets. If this happens then I might switch to R Studio.   
+Potential problems are the size of the files, which vary from 19MB to 153MB – larger files might become unweildly in Google Sheets. If this happens then I might switch to Excel and if that fail then I'll just jump straight into R Studio.  
 
 To make the data naming more user-friendly, I change the file names from `202207-divvy-tripdata.csv` to `2022_07_TripData.csv`.
 
