@@ -70,7 +70,9 @@ The data has a high degree of integrity as it has been collated by Cyclistic. An
 
 Potential problems are the size of the files, which vary from 19MB to 153MB – larger files might become unweildly in Google Sheets. If this happens then I might switch to Excel and if that fail then I'll just jump straight into R Studio.  
 
-Looking at these in more detail, it seems there is a pattern. For the months from May to October (summer-autumn) the file sizes are much larger. For November to April (winter-spring), the file sizes are smaller. This is something to explore because if the file size correlates to the amount of data, then less data in the colder months may point to fewer bike rides. 
+Looking at these in more detail, it seems there is a pattern. For the months from May to October (summer-autumn) the file sizes are much larger. For November to April (winter-spring), the file sizes are smaller. This is something worth exploring because if the file size correlates to the amount of data, then less data in the colder months may point to fewer bike rides.
+
+This creates an interesting hypothesis to examine: namely are casual riders seasonal and member riders all-year round?
 
 To make the data naming more user-friendly, I change the file names from `202207-divvy-tripdata.csv` to `2022_07_TripData.csv`.
 
