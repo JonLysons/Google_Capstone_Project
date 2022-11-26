@@ -70,6 +70,8 @@ The data has a high degree of integrity as it has been collated by Cyclistic. An
 
 Potential problems are the size of the files, which vary from 19MB to 153MB – larger files might become unweildly in Google Sheets. If this happens then I might switch to Excel and if that fail then I'll just jump straight into R Studio.  
 
+Looking at these in more detail, it seems there is a pattern. For the months from May to October (summer-autumn) the file sizes are much larger. For November to April (winter-spring), the file sizes are smaller. This is something to explore because if the file size correlates to the amount of data, then less data in the colder months may point to fewer bike rides. 
+
 To make the data naming more user-friendly, I change the file names from `202207-divvy-tripdata.csv` to `2022_07_TripData.csv`.
 
 ## Step 3: Process
@@ -78,7 +80,11 @@ Process data by cleaning and checking the information.
 
 ### Method
 
-As expected, the spreadsheets proved to be too unwieldly for Google Sheets, but I had much better luck in Excel, which opened them easily. First glance at the data revealed that there are 13 columns with close to 100,000 rows. 
+As expected, the spreadsheets proved to be too unwieldly for Google Sheets, but I had much better luck in Excel, which opened them easily. First glance at the data revealed that there are 13 columns with close to 100,000 rows. As mentioned above, I also noticed the different file sizes.
+
+The 13 column heads are:
+```ride_id```  ```rideable_type```  ```started_at```  ```ended_at```  ```start_station_name```  ```start_station_id```  ```end_station_name```  ```end_station_id```  ```start_lat```  ```start_lng```  ```end_lat```  ```end_lng```  ```member_casual```
+
 
 ## Step 4: Analyse
 
