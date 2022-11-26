@@ -85,9 +85,9 @@ Process data by cleaning and checking the information.
 As expected, the spreadsheets proved to be too unwieldly for Google Sheets, but I had much better luck in Excel, which opened them easily. First glance at the data revealed that there are 13 columns with close to 100,000 rows. As mentioned above, I also noticed the different file sizes.
 
 The 13 column heads are:
-```ride_id```  ```rideable_type```  ```started_at```  ```ended_at```  ```start_station_name```  ```start_station_id```  ```end_station_name```  ```end_station_id```  ```start_lat```  ```start_lng```  ```end_lat```  ```end_lng```  ```member_casual```
+`ride_id`  `rideable_type`  `started_at`  `ended_at`  `start_station_name`  `start_station_id`  `end_station_name`  `end_station_id`  `start_lat`  `start_lng`  `end_lat`  `end_lng`  `member_casual`
 
-Briefly looking at the data in each column, it is apparent that most of the missing data is confined to four columns ```start_station_name```  ```start_station_id```  ```end_station_name```  ```end_station_id```. It also looks at if some of this data is in different formats. 
+Briefly looking at the data in each column, it is apparent that most of the missing data is confined to four columns `start_station_name`  `start_station_id`  `end_station_name`  `end_station_id`. It also looks at if some of this data is in different formats. 
 
 ## Step 4: Analyse
 
