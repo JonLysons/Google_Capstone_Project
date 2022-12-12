@@ -89,7 +89,7 @@ The 13 column heads are:
 
 Briefly looking at the data in each column, it is apparent that most of the missing data is confined to four columns `start_station_name`  `start_station_id`  `end_station_name`  `end_station_id`. It also looks at if some of this data is in different formats. I decided to replace the missing cells with null, because data in other columns for these entries could still be useful. Reminder, I'm looking to compare the data for Casual and Member riders.
 
-####The Cleaing process
+#### The Cleaing process
 
 1. Removed a few duplicate entries in the `ride_id` column using the `Filter` function.
 2. Removed some `ride_id` that had become corrupted, again using the `Filter` function. These were `ride_id` that had significantly more or less than 16 characters.
