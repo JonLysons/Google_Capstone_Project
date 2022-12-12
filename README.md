@@ -108,6 +108,11 @@ Decided to use RStudio.
 
 ### Method
 
+First, I installed some packages
+`install.packages("tidyverse")`
+`install.packages("skimr")`
+`install.packages("janitor")`
+
 Imported the 12 `.CSV` files into R Studio.
 
 
