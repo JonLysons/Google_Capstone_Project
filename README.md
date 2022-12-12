@@ -68,7 +68,7 @@ Overall, the dataset is considered good quality data, giving an accuate look at 
 
 The data has a high degree of integrity as it has been collated by Cyclistic. Analysing this data will help to answer the question assigned to me by finding out whether there are any differences or not in how the two types of bike riders use the service.
 
-Potential problems are the size of the files, which vary from 19MB to 153MB – larger files might become unweildly in Google Sheets. If this happens then I might switch to Excel and if that fail then I'll just jump straight into R Studio.  
+Potential problems are the size of the files, which vary from 19MB to 153MB – larger files might become unweildly in Google Sheets. If this happens then I might switch to Excel and if that fail then I'll just jump straight into RStudio.  
 
 Looking at these in more detail, it seems there is a pattern. For the months from May to October (summer-autumn) the file sizes are much larger. For November to April (winter-spring), the file sizes are smaller. This is something worth exploring because if the file size correlates to the amount of data, then less data in the colder months may point to fewer bike rides.
 
@@ -104,7 +104,7 @@ Briefly looking at the data in each column, it is apparent that most of the miss
 
 Analyse data to find patterns, relationships, and trends.
 
-Decided to use R Studio.
+Decided to use RStudio.
 
 ### Method
 
