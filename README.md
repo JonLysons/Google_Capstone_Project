@@ -87,7 +87,14 @@ As expected, the spreadsheets proved to be too unwieldly for Google Sheets, but 
 The 13 column heads are:
 `ride_id`  `rideable_type`  `started_at`  `ended_at`  `start_station_name`  `start_station_id`  `end_station_name`  `end_station_id`  `start_lat`  `start_lng`  `end_lat`  `end_lng`  `member_casual`
 
-Briefly looking at the data in each column, it is apparent that most of the missing data is confined to four columns `start_station_name`  `start_station_id`  `end_station_name`  `end_station_id`. It also looks at if some of this data is in different formats. 
+Briefly looking at the data in each column, it is apparent that most of the missing data is confined to four columns `start_station_name`  `start_station_id`  `end_station_name`  `end_station_id`. It also looks at if some of this data is in different formats. I decided to replace the missing cells with null, because data in other columns for these entries could still be useful. Reminder, I'm looking to compare the data for Casual and Member riders.
+
+####The Cleaing process
+
+1. Removed a few duplicate entries in the `ride_id` column using the `Filter` function.
+2. Removed some `ride_id` that had become corrupted, again using the `Filter` function.
+3. Replaced empty cells with _null_.
+
 
 ## Step 4: Analyse
 
