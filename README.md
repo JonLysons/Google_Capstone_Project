@@ -98,7 +98,7 @@ Briefly looking at the data in each column, it is apparent that most of the miss
 5. I left the `start_station_name` `start_station_id` `end_station_name` `end_station_id` `start_lat` `start_lng` `end_lat` `end_lng` for the moment. With more time available, I could resolve some of the issues by using the `start_lat` `start_lng` `end_lat` `end_lng` to find out the station names and station ids but that would possibly lose sight of the question that I'm trying to answer, namely "How do annual members and casual riders use Cyclistic bikes differently?"
 6. Timmed some white spaces. 
 7. Added another column for the day of the week. 
-8. Saved the cleaned datasets in a new file as `.CSV`.
+8. Saved the cleaned datasets in a new file as `.csv`.
 
 ## Step 4: Analyse
 
@@ -125,7 +125,7 @@ Used `rbind` to combine the datasets into one file for analysis.
 
 `BikeRides <- rbind(Rides_08_2021, Rides_09_2021, Rides_10_2021, Rides_11_2021, Rides_12_2021, Rides_01_2022, Rides_02_2022, Rides_03_2022, Rides_04_2022, Rides_05_2022, Rides_06_2022, Rides_07_2022)`
 
-
+This produced a dataset with almost 6 million rows.
 
 ## Step 5: Share
 
