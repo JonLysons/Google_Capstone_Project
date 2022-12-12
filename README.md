@@ -113,7 +113,18 @@ First, I installed some packages
 `install.packages("skimr")`
 `install.packages("janitor")`
 
-Imported the 12 `.CSV` files into R Studio.
+Then loaded specific tools `library(tidyverse)`, `library(lubridate)`, `library(dplyr)`, `ibrary(readr)`, `library(readxl)`, `library(skimr)` and `library(janitor)`.
+
+Imported the 12 `.CSV` files into R Studio and renamed them in RStudio:
+
+`Rides_08_2021 <- read_csv("desktop/Capstone_Data/6_Cleaned_Data/2021_08_TripData.csv")`
+
+Used `ls()` to make sure all datasets were uploaded and used `str(Rides_08_2021)` to summarise the dataset.
+
+Used `rbind` to combine the datasets into one file for analysis.
+
+`BikeRides <- rbind(Rides_08_2021, Rides_09_2021, Rides_10_2021, Rides_11_2021, Rides_12_2021, Rides_01_2022, Rides_02_2022, Rides_03_2022, Rides_04_2022, Rides_05_2022, Rides_06_2022, Rides_07_2022)`
+
 
 
 ## Step 5: Share
