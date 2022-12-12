@@ -82,25 +82,34 @@ Process data by cleaning and checking the information.
 
 ### Method
 
-As expected, the spreadsheets proved to be too unwieldly for Google Sheets, but I had much better luck in Excel, which opened them easily. First glance at the data revealed that there are 13 columns with close to 100,000 rows. As mentioned above, I also noticed the different file sizes.
+As expected, the spreadsheets proved to be too unwieldly for Google Sheets, but I had much better luck in Excel, which opened them easily. First glance at the data revealed that there are 13 columns with close to 700,000 rows. As mentioned above, I also noticed the different file sizes.
 
 The 13 column heads are:
-`ride_id`  `rideable_type`  `started_at`  `ended_at`  `start_station_name`  `start_station_id`  `end_station_name`  `end_station_id`  `start_lat`  `start_lng`  `end_lat`  `end_lng`  `member_casual`
+`ride_id` `rideable_type` `started_at` `ended_at` `start_station_name` `start_station_id` `end_station_name` `end_station_id` `start_lat` `start_lng` `end_lat` `end_lng` `member_casual`
 
 Briefly looking at the data in each column, it is apparent that most of the missing data is confined to four columns `start_station_name`  `start_station_id`  `end_station_name`  `end_station_id`. It also looks at if some of this data is in different formats. I decided to replace the missing cells with null, because data in other columns for these entries could still be useful. Reminder, I'm looking to compare the data for Casual and Member riders.
 
 ####The Cleaing process
 
 1. Removed a few duplicate entries in the `ride_id` column using the `Filter` function.
-2. Removed some `ride_id` that had become corrupted, again using the `Filter` function.
-3. Replaced empty cells with _null_.
-
+2. Removed some `ride_id` that had become corrupted, again using the `Filter` function. These were `ride_id` that had significantly more or less than 16 characters.
+3. Replaced empty cells with _null_ using Find and Replace. There were mainly for `start_station_name` `start_station_id` `end_station_name` `end_station_id`.
+4. The `started_at` and `ended_at` columns contained both the date and time, so I split these off into separate cells, so I created four new columns under the headings  `start_date`  `start_time`  `end_date`  `end_time`. I wanted to create another column for ride duration but Excel started to run slowly, so I do this in R Studio.
+5. I left the `start_station_name` `start_station_id` `end_station_name` `end_station_id` `start_lat` `start_lng` `end_lat` `end_lng` for the moment. With more time available, I could resolve some of the issues by using the `start_lat` `start_lng` `end_lat` `end_lng` to find out the station names and station ids but that would possibly lose sight of the question that I'm trying to answer, namely "How do annual members and casual riders use Cyclistic bikes differently?"
+6. Timmed some white spaces. 
+7. Added another column for the day of the week. 
+8. Saved the cleaned datasets in a new file as `.CSV`.
 
 ## Step 4: Analyse
 
 Analyse data to find patterns, relationships, and trends.
 
+Decided to use R Studio.
+
 ### Method
+
+Imported the 12 `.CSV` files into R Studio.
+
 
 ## Step 5: Share
 
