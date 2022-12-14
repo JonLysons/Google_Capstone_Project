@@ -153,10 +153,15 @@ BikeRides3 %>%
 
 
 |  member_casual | n |
+
 | -–––––––––– | ––––––––––– |
+
 | <chr> | <int> |
+  
 | 1 casual | 2522226 |
+  
 | 2 member | 3379237 |
+
 
 ## Step 5: Share
 
