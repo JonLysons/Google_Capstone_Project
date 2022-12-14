@@ -146,8 +146,7 @@ Added a new column for `ride_duration`, `weekday` and `month`and filled with dat
 
 Worked out the number of casual to member riders
 
-```
-BikeRides3 %>%
+```BikeRides3 %>%
   group_by(member_casual) %>%
   count(member_casual)
 ```
@@ -159,8 +158,7 @@ BikeRides3 %>%
 
 Worked out the mean ride times for both casual and member riders (includes `round` to limit to two decimal places
 
-```
-BikeRides3 %>%
+```BikeRides3 %>%
   group_by(member_casual) %>%
   summarise(mean_ride_time = round(mean(ride_duration), 2))
 ```
@@ -174,8 +172,7 @@ This suggests that casual riders spend longer riding the bike than those with me
 
 Then counted the number of member and casual riders per weekday
 
-```
-BikeRides3 %>%
+```BikeRides3 %>%
   group_by(member_casual) %>%
   count(weekday)
 ```
@@ -201,8 +198,7 @@ It appears that member riders are more regular users, while casual riders peak a
 
 Next did the same thing for the months
 
-```
-BikeRides3 %>%
+```BikeRides3 %>%
   group_by(member_casual) %>%
   count(month)
 ```
@@ -234,7 +230,7 @@ BikeRides3 %>%
 | member | November | 253,049 |
 | member | December | 177,802 |
 
-It seems from this that usage is seasonal, summer months are more popular
+It seems from this that usage is seasonal, summer months are more popular. There was too much missing data from the start and end locations to be able to draw any meaninful conclusion.
 
 ## Step 5: Share
 
