@@ -137,11 +137,13 @@ BikeRides3 <- BikeRides2 %>%
   mutate(ended_at = as.POSIXct(ended_at))
   ```
   
-Added a new column for `ride_duration` and `weekday` and filled with data
+Added a new column for `ride_duration`, `weekday` and `month`and filled with data
  
 `BikeRides3$ride_duration <- difftime(BikeRides3$ended_at, BikeRides3$started_at, units="mins")` added a new column and calculated the duration of the ride
   
 `BikeRides3$weekday <- wday(BikeRides3$start_date, label = TRUE, abbr=FALSE)` added a new column with the day of the week
+
+`BikeRides3$month <- month(BikeRides3$start_date, label = TRUE, abbr = FALSE)` added a new column with the month
 
 Worked out the number of casual to member riders
 
@@ -198,6 +200,42 @@ BikeRides3 %>%
 
 It appears that member riders are more regular users, while casual riders peak at weekends. But it would be better displayed as a barchart
 
+Next did the same thing for the months
+
+```
+BikeRides3 %>%
+  group_by(member_casual) %>%
+  count(month)
+```
+
+| member_casual | month |  n
+| --- | --- | --- |
+| casual | January | 18,520 |
+| casual | February | 21,416 |
+| casual | March | 89,882 |
+| casual | April | 126,417 |
+| casual | May | 280,415 |
+| casual | June | 369,051 |
+| casual | July | 406,055 |
+| casual | August | 412,671 |
+| casual | September | 363,890 |
+| casual | October | 257,242 |
+| casual | November | 106,929 |
+| casual | December | 69,738 |
+| member | January | 85,250 |
+| member | February | 94,193 |
+| member | March | 194,160 |
+| member | April | 244,832 |
+| member | May | 354,443 |
+| member | June | 400,153 |
+| member | July | 417,433 |
+| member | August | 391,681 |
+| member | September | 392,257 |
+| member | October | 373,984 |
+| member | November | 253,049 |
+| member | December | 177,802 |
+
+It seems from this that usage is seasonal, summer months are more popular
 
 ## Step 5: Share
 
