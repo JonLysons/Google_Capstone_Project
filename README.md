@@ -156,6 +156,46 @@ BikeRides3 %>%
 | 1 casual | 2522226 |
 | 2 member | 3379237 |
 
+Worked out the mean ride times for both casual and member riders (includes `round` to limit to two decimal places
+
+```
+BikeRides3 %>%
+  group_by(member_casual) %>%
+  summarise(mean_ride_time = round(mean(ride_duration), 2))
+```
+
+| member_casual | mean_ride_time |
+| --- | --- |
+| 1 casual | 29.21 mins |
+| 2 member | 12.93 mins |
+
+This suggests that casual riders spend longer riding the bike than those with memberships.
+
+Then counted the number of member and casual riders per weekday
+
+```
+BikeRides3 %>%
+  group_by(member_casual) %>%
+  count(weekday)
+```
+
+| member_casual | weekday | n
+| --- | --- | --- |
+| 1 casual | Sunday | 475626
+| 2 casual | Monday | 299656
+| 3 casual | Tuesday | 273826
+| 4 casual | Wednesday | 281783
+| 5 casual | Thursday | 316118
+| 6 casual | Friday | 347642
+| 7 casual | Saturday | 527575
+| 8 member | Sunday | 417978
+| 9 member | Monday | 472392
+|10 member | Tuesday | 523387
+|11 member | Wednesday | 522648
+|12 member | Thursday | 522662
+|13 member | Friday | 466680
+|14 member | Saturday | 453490
+
 
 ## Step 5: Share
 
