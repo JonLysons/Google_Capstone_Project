@@ -133,7 +133,8 @@ Changed the format of the cells so that I could do some calculations
   mutate(end_date = ymd(end_date)) %>%
   mutate(start_date = ymd(start_date)) %>%
   mutate(started_at = as.POSIXct(started_at)) %>%
-  mutate(ended_at = as.POSIXct(ended_at))```
+  mutate(ended_at = as.POSIXct(ended_at))
+  ```
   
 Added a new column for `ride_duration`, `weekday` and `month`and filled with data
  
