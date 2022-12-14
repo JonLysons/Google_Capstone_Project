@@ -129,13 +129,11 @@ This produced a dataset with almost 6 million rows.
 
 Changed the format of the cells so that I could do some calculations
 
-```
-BikeRides3 <- BikeRides2 %>%
+```BikeRides3 <- BikeRides2 %>%
   mutate(end_date = ymd(end_date)) %>%
   mutate(start_date = ymd(start_date)) %>%
   mutate(started_at = as.POSIXct(started_at)) %>%
-  mutate(ended_at = as.POSIXct(ended_at))
-  ```
+  mutate(ended_at = as.POSIXct(ended_at))```
   
 Added a new column for `ride_duration`, `weekday` and `month`and filled with data
  
