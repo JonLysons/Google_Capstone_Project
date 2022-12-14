@@ -141,7 +141,7 @@ Added a new column for `ride_duration`, `weekday` and `month`and filled with dat
  
 `BikeRides3$ride_duration <- difftime(BikeRides3$ended_at, BikeRides3$started_at, units="mins")` added a new column and calculated the duration of the ride
   
-`BikeRides3$weekday <- wday(BikeRides3$start_date, label = TRUE, abbr=FALSE)` added a new column with the day of the week
+`BikeRides3$weekday <- wday(BikeRides3$start_date, label = TRUE, abbr=FALSE, week_start = getOption("lubridate.week.start", 1))` added a new column with the day of the week
 
 `BikeRides3$month <- month(BikeRides3$start_date, label = TRUE, abbr = FALSE)` added a new column with the month
 
@@ -183,20 +183,20 @@ BikeRides3 %>%
 
 | member_casual | weekday | n
 | --- | --- | --- |
-| casual | Sunday | 475,626 |
 | casual | Monday | 299,656 |
 | casual | Tuesday | 273,826 |
 | casual | Wednesday | 281,783 |
 | casual | Thursday | 316,118 |
 | casual | Friday | 347,642 |
 | casual | Saturday | 527,575 |
-| member | Sunday | 417,978 |
+| casual | Sunday | 475,626 |
 | member | Monday | 472,392 |
 | member | Tuesday | 523,387 |
 | member | Wednesday | 522,648 |
 | member | Thursday | 522,662 |
 | member | Friday | 466,680 |
 | member | Saturday | 453,490 |
+| member | Sunday | 417,978 |
 
 It appears that member riders are more regular users, while casual riders peak at weekends. But it would be better displayed as a barchart
 
