@@ -127,6 +127,36 @@ Used `rbind` to combine the datasets into one file for analysis.
 
 This produced a dataset with almost 6 million rows.
 
+Changed the format of the cells so that I could do some calculations
+
+```
+BikeRides3 <- BikeRides2 %>%
+  mutate(end_date = ymd(end_date)) %>%
+  mutate(start_date = ymd(start_date)) %>%
+  mutate(started_at = as.POSIXct(started_at)) %>%
+  mutate(ended_at = as.POSIXct(ended_at))
+  ```
+  
+Added a new column for `ride_duration` and `weekday` and filled with data
+ 
+`BikeRides3$ride_duration <- difftime(BikeRides3$ended_at, BikeRides3$started_at, units="mins")` added a new column and calculated the duration of the ride
+  
+`BikeRides3$weekday <- wday(BikeRides3$start_date, label = TRUE, abbr=FALSE)` added a new column with the day of the week
+
+Worked out the number of casual to member riders
+
+```
+BikeRides3 %>%
+  group_by(member_casual) %>%
+  count(member_casual)
+```
+
+|  member_casual     n      |
+| -–––––––––– | ––––––––––– |
+|    <chr>    |    <int>    |
+|  1 casual   |   2522226   |
+|  2 member   |   3379237   |
+
 ## Step 5: Share
 
 Share data with your audience.
