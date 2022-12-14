@@ -151,7 +151,7 @@ Worked out the number of casual to member riders
   count(member_casual)
 ```
 
-|  member_casual | n |
+|  member_casual | number |
 | --- | --- |
 | casual | 2,522,226 |
 | member | 3,379,237 |
@@ -177,7 +177,7 @@ Then counted the number of member and casual riders per weekday
   count(weekday)
 ```
 
-| member_casual | weekday | n
+| member_casual | weekday | number
 | --- | --- | --- |
 | casual | Monday | 299,656 |
 | casual | Tuesday | 273,826 |
@@ -203,7 +203,7 @@ Next did the same thing for the months
   count(month)
 ```
 
-| member_casual | month |  n
+| member_casual | month |  number
 | --- | --- | --- |
 | casual | January | 18,520 |
 | casual | February | 21,416 |
@@ -238,8 +238,67 @@ Share data with your audience.
 
 ### Method
 
+I created several charts to illustrate the differences between the Casual and Member users.
+
+First, I compared Casual and Member users
+
+```
+ggplot(data = BikeRides3) + 
+  geom_bar(mapping = aes(x = member_casual, fill = member_casual, width = 0.5)) +
+  labs(title = "Casual vs Member riders", x = "Type of User", y = "Number of Users") +
+  scale_fill_brewer(palette = "Set1") +
+  scale_y_continuous(breaks = c(0, 500000, 1000000, 1500000, 2000000, 2500000, 3000000, 3500000)) +
+  theme(legend.position="none")
+```
+![UserTypes](https://user-images.githubusercontent.com/117950069/207711957-ba06343d-7022-4578-a1da-8dd28c65650d.png)
+
+While Members make up the majority of users with 57.2% of total users, this leaves 42.8% Casual users who can be converted into Members and thus grow the scheme. 
+
+Next, I compared the Casual and Member usage over the course of the week
+
+```
+ggplot(data = rides_week) + 
+  (aes(x = weekday, y= number, fill = member_casual, width = 0.75)) +
+  geom_col(position = "dodge") +
+  labs(title = "Number of Users on Each Day", x = "Type of User", y = "Number of Users") +
+  scale_fill_brewer(palette = "Set1") +
+  scale_y_continuous(breaks = c(0, 50000, 100000, 150000, 200000, 250000, 300000, 350000, 400000, 450000, 500000)) +
+  theme(axis.text.x = element_text(angle = 60, hjust =1), legend.position="none")
+```
+
+![RidesWeek](https://user-images.githubusercontent.com/117950069/207713796-c66aadc6-4784-4d72-a160-8cf18d5b5aff.png)
+
+From this chart, it appears that the Member usage is fairly consistent over the course of the week, marginally tapering off during the weekend. But for the Casual rider, usage increases significantly at the weekend.
+
+And finally, I compared the Casual and Member usage for each month over the course of the 12 month sample. 
+
+```
+ggplot(data = rides_month) + 
+  (aes(x = month, y= number, fill = member_casual, width = 0.75)) +
+  geom_col(position = "dodge") +
+  labs(title = "Number of Monthly Riders ", x = "Month", y = "Number of Users") +
+  scale_fill_brewer(palette = "Set1") +
+  scale_y_continuous(breaks = c(0, 50000, 100000, 150000, 200000, 250000, 300000, 350000, 400000, 450000)) +
+  theme(axis.text.x = element_text(angle = 60, hjust =1), legend.position="none")
+```
+
+![RidesMonth](https://user-images.githubusercontent.com/117950069/207713860-72b421a1-14ea-41fd-99b8-c1938d279a3d.png)
+
+At suggested by the files sizes at the start of this project, the winter months saw a fall in usage with both January and February being the lowest for both Casual and Member riders. For Members, usage steadily increases from March onwards, peaking in July and holding steady until falling in November. For Casual riders, there is a sharp increase in May for the summer months, peaking in August. There then is sharp decline in Casual usage in November as winter sets in.
+
 ## Step 6: Act
 
 Act on the data and use the analysis results.
 
 ### Method
+
+With this data, I have several recommendations for Moreno as a way to convert Casual users into members. 
+
+1. Start a marketing campaign in March to attract Casual users to the scheme so that they can make the most of their memberships during the peak usage during the summer months.
+2. Explore different types of membership schemes, with perhaps a six-month membership that covers the summer months as another way of attracting casual users onto the memberhip roster.
+3. Introduce a new annual membership plan that just covers weekend users. Again, this would be targetted at Casual users and would be another way of converting Casual users into members. 
+4. Do further research to find out whether Casual users live in the Chicago area or are from other locations as this would enable more targetted advertising campaign. This could result in short-term membership plans for Casual users that don't live in the Chicago area. 
+5. Re-examine the data gathering techniques to ensure that data for the start and end locations is more complete for future analysis. More complete data in this area would allow better examination of the location of users, which may provide insight into the best locations for advertising campaigns to inform Casual users about the different membership options. 
+
+Overall, I enjoyed this project. The Excel part was relatively simple and quick to complete due to existing knowledge. But I particularly enjoyed using RStudio. Working out the little bits of script to process and analyse the data was a lot of fun, and I'm looking forward to using R more in the future.
+The downsides, I didn't really get a chance to use Tableau since I used R to create the charts, so I'll do some Tableau specific projects in the future. And I didn't get the chance to use SQL, so again I'll look at some dedicated SQL projects to do in the future. 
