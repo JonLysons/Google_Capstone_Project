@@ -203,7 +203,7 @@ Next did the same thing for the months
   count(month)
 ```
 
-| member_casual | month |  number
+| member_casual | month | number
 | --- | --- | --- |
 | casual | January | 18,520 |
 | casual | February | 21,416 |
